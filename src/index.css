@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* LVN Home Care Brand Colors - Enhanced */
+    --background: 170 25% 94%; /* Soft teal background instead of white */
+    --foreground: 196 20% 25%; /* Deeper blue-gray for contrast */
+
+    --card: 0 0% 100%;
+    --card-foreground: 196 20% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 196 20% 25%;
+
+    --primary: 170 45% 55%; /* Vibrant teal - more saturated */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 194 40% 45%; /* Richer blue-gray */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 170 30% 88%;
+    --muted-foreground: 196 15% 40%;
+
+    --accent: 180 55% 48%; /* Bright accent teal */
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 170 25% 82%;
+    --input: 170 25% 85%;
+    --ring: 170 45% 55%;
+
+    --radius: 1rem;
+
+    /* Gradients and effects */
+    --gradient-primary: linear-gradient(135deg, hsl(170 45% 55%), hsl(180 55% 48%));
+    --gradient-hero: linear-gradient(135deg, hsl(170 50% 60% / 0.95), hsl(180 60% 50% / 0.95));
+    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%), hsl(170 15% 97%));
+    --gradient-section: linear-gradient(to bottom, hsl(170 30% 92%), hsl(170 35% 88%));
+    --gradient-section-alt: linear-gradient(135deg, hsl(194 35% 50%), hsl(170 40% 52%));
+    --shadow-vibrant: 0 10px 40px hsl(170 45% 55% / 0.2);
+    --shadow-glow: 0 0 30px hsl(170 45% 55% / 0.3);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-soft: 0 4px 20px rgba(174, 200, 196, 0.15);
+    --shadow-card: 0 2px 12px rgba(82, 102, 108, 0.08);
+  }
+
+  .dark {
+    --background: 196 13% 37%;
+    --foreground: 180 11% 98%;
+
+    --card: 196 13% 40%;
+    --card-foreground: 180 11% 98%;
+
+    --popover: 196 13% 40%;
+    --popover-foreground: 180 11% 98%;
+
+    --primary: 170 20% 73%;
+    --primary-foreground: 196 13% 37%;
+
+    --secondary: 194 15% 56%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 196 13% 30%;
+    --muted-foreground: 194 15% 70%;
+
+    --accent: 170 20% 73%;
+    --accent-foreground: 196 13% 37%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 196 13% 50%;
+    --input: 196 13% 50%;
+    --ring: 170 20% 73%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
