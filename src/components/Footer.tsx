@@ -21,10 +21,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-white/80">
-              <li>123 Care Street, Suite 100</li>
-              <li>Your City, ST 12345</li>
-              <li>(555) 123-4567</li>
-              <li>info@lvnhomecare.com</li>
+              <li>155 N. Riverview drive unit 100 </li>
+              <li>Anaheim hills , CA 92808</li>
+              <li>+1 (714) 872-2502</li>
+              <li>Lvnhomecareservices@gmail.com</li>
             </ul>
           </div>
 

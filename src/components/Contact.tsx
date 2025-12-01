@@ -31,7 +31,7 @@ const Contact = () => {
             Get in Touch
           </h2>
           <p className="text-lg md:text-xl text-secondary max-w-3xl mx-auto">
-            We're here to answer your questions and help you find the right care solution 
+            We're here to answer your questions and help you find the right care solution
             for your loved one. Reach out today for a free consultation.
           </p>
         </div>
@@ -44,8 +44,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Phone</h3>
-                <p className="text-muted-foreground mb-1">Main Line: (555) 123-4567</p>
-                <p className="text-muted-foreground">24/7 Support: (555) 765-4321</p>
+                <p className="text-muted-foreground mb-1">Main Line: +1 (714) 872-2502</p>
               </div>
             </div>
 
@@ -55,7 +54,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Email</h3>
-                <p className="text-muted-foreground">info@lvnhomecare.com</p>
+                <p className="text-muted-foreground">Lvnhomecareservices@gmail.com</p>
               </div>
             </div>
 
@@ -66,8 +65,8 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Office</h3>
                 <p className="text-muted-foreground">
-                  123 Care Street, Suite 100<br />
-                  Your City, ST 12345
+                  155 N. Riverview drive unit 100<br />
+                  Anaheim Hills, CA 92808
                 </p>
               </div>
             </div>
@@ -112,8 +111,8 @@ const Contact = () => {
                 className="min-h-[150px]"
               />
             </div>
-            <Button 
-              type="submit" 
+            <Button
+              type="submit"
               className="w-full bg-gradient-primary text-white h-12 text-lg rounded-full hover:shadow-vibrant hover:scale-105 transition-all duration-300"
             >
               Send Message
