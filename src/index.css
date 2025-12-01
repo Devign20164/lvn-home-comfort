@@ -8,45 +8,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* LVN Home Care Brand Colors - Enhanced */
-    --background: 170 25% 94%; /* Soft teal background instead of white */
-    --foreground: 196 20% 25%; /* Deeper blue-gray for contrast */
+    /* LVN Home Care Brand Colors - Blue Theme */
+    --background: 0 0% 100%; /* White background */
+    --foreground: 216 70% 20%; /* Deep blue for text */
 
     --card: 0 0% 100%;
-    --card-foreground: 196 20% 25%;
+    --card-foreground: 216 70% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 196 20% 25%;
+    --popover-foreground: 216 70% 20%;
 
-    --primary: 170 45% 55%; /* Vibrant teal - more saturated */
+    --primary: 216 70% 49%; /* #256ad1 */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 194 40% 45%; /* Richer blue-gray */
+    --secondary: 201 100% 61%; /* #38b6ff */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 170 30% 88%;
-    --muted-foreground: 196 15% 40%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 216 20% 45%;
 
-    --accent: 180 55% 48%; /* Bright accent teal */
-    --accent-foreground: 0 0% 100%;
+    --accent: 183 77% 63%; /* #5ce1e6 */
+    --accent-foreground: 216 70% 20%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 170 25% 82%;
-    --input: 170 25% 85%;
-    --ring: 170 45% 55%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 216 70% 49%;
 
     --radius: 1rem;
 
     /* Gradients and effects */
-    --gradient-primary: linear-gradient(135deg, hsl(170 45% 55%), hsl(180 55% 48%));
-    --gradient-hero: linear-gradient(135deg, hsl(170 50% 60% / 0.95), hsl(180 60% 50% / 0.95));
-    --gradient-card: linear-gradient(to bottom, hsl(0 0% 100%), hsl(170 15% 97%));
-    --gradient-section: linear-gradient(to bottom, hsl(170 30% 92%), hsl(170 35% 88%));
-    --gradient-section-alt: linear-gradient(135deg, hsl(194 35% 50%), hsl(170 40% 52%));
-    --shadow-vibrant: 0 10px 40px hsl(170 45% 55% / 0.2);
-    --shadow-glow: 0 0 30px hsl(170 45% 55% / 0.3);
+    --gradient-primary: linear-gradient(135deg, hsl(216 70% 49%), hsl(201 100% 61%));
+    --gradient-hero: linear-gradient(135deg, rgba(37, 106, 209, 0.1), rgba(56, 182, 255, 0.1));
+    --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.95));
+    --gradient-section: linear-gradient(135deg, hsl(210 40% 96%), hsl(201 100% 96%));
+    --gradient-section-alt: linear-gradient(135deg, hsl(216 70% 49%), hsl(201 100% 61%));
+    --shadow-vibrant: 0 10px 40px hsl(216 70% 49% / 0.2);
+    --shadow-glow: 0 0 30px hsl(201 100% 61% / 0.4);
 
     --sidebar-background: 0 0% 98%;
 
@@ -71,33 +71,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 196 13% 37%;
-    --foreground: 180 11% 98%;
+    --background: 216 70% 10%;
+    --foreground: 0 0% 98%;
 
-    --card: 196 13% 40%;
-    --card-foreground: 180 11% 98%;
+    --card: 216 70% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 196 13% 40%;
-    --popover-foreground: 180 11% 98%;
+    --popover: 216 70% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 170 20% 73%;
-    --primary-foreground: 196 13% 37%;
+    --primary: 201 100% 61%;
+    --primary-foreground: 216 70% 10%;
 
-    --secondary: 194 15% 56%;
+    --secondary: 216 70% 49%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 196 13% 30%;
-    --muted-foreground: 194 15% 70%;
+    --muted: 216 40% 25%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 170 20% 73%;
-    --accent-foreground: 196 13% 37%;
+    --accent: 183 77% 63%;
+    --accent-foreground: 216 70% 10%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 196 13% 50%;
-    --input: 196 13% 50%;
-    --ring: 170 20% 73%;
+    --border: 216 40% 25%;
+    --input: 216 40% 25%;
+    --ring: 201 100% 61%;
   }
 }
 

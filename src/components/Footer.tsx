@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,24 +9,22 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-primary flex items-center justify-center shadow-glow">
-                <Heart className="h-5 w-5 text-white" />
-              </div>
-              LVN Home Care
+
+              LVN Home Care Services
             </h3>
             <p className="text-white/80 leading-relaxed">
-              Compassionate, professional non-medical home care services 
+              Compassionate, professional non-medical home care services
               dedicated to helping seniors live safely and independently.
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4">Service Areas</h4>
+            <h4 className="text-lg font-bold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-white/80">
-              <li>City Center & Downtown</li>
-              <li>Northern Suburbs</li>
-              <li>Eastern Districts</li>
-              <li>Western Communities</li>
+              <li>123 Care Street, Suite 100</li>
+              <li>Your City, ST 12345</li>
+              <li>(555) 123-4567</li>
+              <li>info@lvnhomecare.com</li>
             </ul>
           </div>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Heart, Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,12 +25,9 @@ const Navbar = () => {
           {/* Logo */}
           <button 
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-2 font-serif text-2xl font-bold text-foreground hover:text-primary transition-colors"
+            className="flex items-center hover:opacity-80 transition-opacity"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center shadow-glow">
-              <Heart className="h-6 w-6 text-white" />
-            </div>
-            LVN Home Care
+            <img src={logo} alt="LVN Home Care Services" className="h-12 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
