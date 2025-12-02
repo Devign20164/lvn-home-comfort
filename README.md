@@ -81,6 +81,7 @@ This project uses a serverless function to send emails via Gmail SMTP. To enable
    - Add the following variables:
      - `GMAIL_USER`: `lvnhomecareservices@gmail.com`
      - `GMAIL_APP_PASSWORD`: Your 16-character Gmail App Password
+     - `NEXT_PUBLIC_SITE_URL`: Your deployed website URL (e.g., `https://your-site.vercel.app`) - Optional, will auto-detect from Vercel if not set
 
 3. **Redeploy:**
    - After adding the environment variables, redeploy your project for the changes to take effect
